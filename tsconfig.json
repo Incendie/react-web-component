@@ -3,5 +3,17 @@
   "references": [
     { "path": "./tsconfig.app.json" },
     { "path": "./tsconfig.node.json" }
-  ]
+  ],
+  "compilerOptions": {
+    "jsx": "react-jsx",
+    "moduleResolution": "Bundler",
+    "module": "ESNext",
+    "paths": {
+      "@src/*": ["./src/*"],
+      "@root/*": ["./*"]
+    },
+    "target": "ESNext",
+    "skipLibCheck": true,
+    "strictNullChecks": true
+  }
 }
