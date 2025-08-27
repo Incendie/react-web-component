@@ -1,11 +1,12 @@
+import eslint from '@nabla/vite-plugin-eslint';
+import viteReact from '@vitejs/plugin-react';
 import { defineConfig } from 'vite';
 import tsConfigPaths from 'vite-tsconfig-paths';
-import viteReact from '@vitejs/plugin-react';
 
 // https://vite.dev/config/
 export default defineConfig({
   server: {
     port: 3000,
   },
-  plugins: [tsConfigPaths(), viteReact()],
+  plugins: [eslint(), tsConfigPaths(), viteReact()],
 });
